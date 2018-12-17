@@ -18,8 +18,8 @@ router.get("/", function (req, res) {
     res.render('ledger', locals);
 });
 
-router.get("/account", function (req, res) {
-    res.render('account', locals);
+router.get("/transactions", function (req, res) {
+    res.render('templates/account/transactions', locals);
 });
 
 app.use("/", router);

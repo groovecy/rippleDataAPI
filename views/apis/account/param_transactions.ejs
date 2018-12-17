@@ -1,0 +1,90 @@
+<table class="table table-striped table-sm">
+    <thead>
+        <tr>
+            <th align="left">Field</th>
+            <th align="left">Value</th>
+            <th align="left">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">address</td>
+            <td align="left">String - <a href="#addresses">Address</a></td>
+            <td align="left">XRP Ledger address to query.</td>
+        </tr>
+    </tbody>
+</table>
+<h5>* Optional Parameters</h5>
+<table class="table table-striped table-sm">
+    <thead>
+        <tr>
+            <th align="left">Field</th>
+            <th align="left">Value</th>
+            <th align="left">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">start</td>
+            <td align="left">String - <a href="#timestamps">Timestamp</a></td>
+            <td align="left">Start time of query range. The default is the earliest date
+                available.</td>
+        </tr>
+        <tr>
+            <td align="left">end</td>
+            <td align="left">String - <a href="#timestamps">Timestamp</a></td>
+            <td align="left">End time of query range. The default is the current date.</td>
+        </tr>
+        <tr>
+            <td align="left">min_sequence</td>
+            <td align="left">String</td>
+            <td align="left">Minimum sequence number to query.</td>
+        </tr>
+        <tr>
+            <td align="left">max_sequence</td>
+            <td align="left">String</td>
+            <td align="left">Max sequence number to query.</td>
+        </tr>
+        <tr>
+            <td align="left">type</td>
+            <td align="left">String</td>
+            <td align="left">Restrict results to a specified <a href="transaction-types.html">transaction
+                    type</a>.</td>
+        </tr>
+        <tr>
+            <td align="left">result</td>
+            <td align="left">String</td>
+            <td align="left">Restrict results to a specified <a href="transaction-results.html">transaction
+                    result</a>.</td>
+        </tr>
+        <tr>
+            <td align="left">binary</td>
+            <td align="left">Boolean</td>
+            <td align="left">Return results in binary format.</td>
+        </tr>
+        <tr>
+            <td align="left">descending</td>
+            <td align="left">Boolean</td>
+            <td align="left">If true, return results in reverse chronological order.
+                The default is false.</td>
+        </tr>
+        <tr>
+            <td align="left">limit</td>
+            <td align="left">Integer</td>
+            <td align="left">Maximum results per page. The default is 20. Cannot be more
+                than
+                1,000.</td>
+        </tr>
+        <tr>
+            <td align="left">marker</td>
+            <td align="left">String</td>
+            <td align="left"><a href="#pagination">Pagination</a> key from previously
+                returned
+                response.</td>
+        </tr>
+    </tbody>
+</table>
+<p class="devportal-callout note"><strong>Note:</strong> This method cannot return CSV
+    format;
+    only
+    JSON results are supported for raw XRP Ledger transactions.</p>

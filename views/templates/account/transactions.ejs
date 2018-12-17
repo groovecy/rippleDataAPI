@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../../head.ejs %>
+</head>
+
+<body>
+    <% include ../../navigator.ejs %>
+    <div id="apiTitle" class="jumbotron text-center">
+        <h1> Account Data API</h1>
+    </div>
+    <div class="text-center">
+        <div class="container">
+            <div class="row talign-left">
+                <div class="col-sm-6">
+                    <h3>Execute</h3>
+                    <div id="wrapExecute">
+                        <h5>* Required Parameters</h5>
+                        <div id="wrapParams">
+                            <% include ../../apis/account/param_transactions.ejs %>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Summary</h3>
+                    <div id="wrapSummary">
+                        결과값을 요약해서 보여줌
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container condition">
+            <div class="row condition-wrap" id="conditionWrap"></div>
+            <div class="col-sm-3" id="conditionWrap1"></div>
+            <div class="col-sm-3" id="conditionWrap2"></div>
+            <div class="col-sm-3" id="conditionWrap3"></div>
+            <div class="col-sm-3" id="conditionWrap4"></div>
+            <div class="row condition-wrap">
+                <div class="col-sm-11"></div>
+                <div class="col-sm-1"><button id="btnQuery" type="button" class="btn btn-success btn-lg">Query</button></div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="wrapResult" class="row talign-left result-wrap">
+                <div class="col-sm-12">
+                    <h3>Result</h3>
+                    <pre id="result" class="result-area"></pre>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
