@@ -22,6 +22,10 @@ router.get("/transactions", function (req, res) {
     res.render('templates/account/transactions', locals);
 });
 
+router.get("/payments", function (req, res) {
+    res.render('templates/account/payments', locals);
+});
+
 app.use("/", router);
 
 app.use('/scripts', express.static(__dirname + '/scripts/'));
