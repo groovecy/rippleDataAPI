@@ -1,0 +1,24 @@
+{
+  "name": "ripple-bootstrap",
+  "version": "1.0.0",
+  "description": "node.js test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express",
+    "ripple"
+  ],
+  "author": "groovecy",
+  "license": "ISC",
+  "dependencies": {
+    "ejs-locals": "^1.0.2",
+    "express": "^4.16.3",
+    "jquery-datetimepicker": "^2.5.20",
+    "nodemon": "^1.18.8"
+  }
+}

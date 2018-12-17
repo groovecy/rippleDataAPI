@@ -1,0 +1,32 @@
+.talign-left {
+    text-align: left !important;
+}
+
+.condition {
+    margin-bottom: 40px;
+    margin-top: 40px
+}
+
+.condition-wrap {
+    padding-left: 29px;
+    padding-right: 39px;
+}
+
+.caret {
+    display: none;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.result-area {
+    max-height: 1000px;
+    overflow-y: scroll;
+}
+
+.result-wrap {
+    display: none !important;
+}
