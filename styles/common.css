@@ -30,3 +30,7 @@
 .result-wrap {
     display: none !important;
 }
+
+body {
+    font-size: 1.2rem !important;
+}
