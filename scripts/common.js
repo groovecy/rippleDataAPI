@@ -4,14 +4,6 @@ var end = null;
 var limit = null;
 var API_ADDRESS = "";
 
-$(document).ready(function () {
-    renderAddress();
-    renderTitle();
-    renderStart();
-    renderEnd();
-    renderLimit();
-    addQueryEvent();
-});
 var renderTitle = function () {
     $("#apiTitle").append(model.apiTitle("{address}"));
 }

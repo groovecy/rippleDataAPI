@@ -20,7 +20,7 @@ router.get("/", function (req, res) {
 
 router.get("/transactions", function (req, res) {
     res.render('templates/account/transactions', {
-        ptype: 'transaction'
+        type: 'transaction'
     });
 });
 
